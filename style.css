@@ -1,5 +1,32 @@
-h1{
-    text-align: center;
-    background-color: cornflowerblue;
-    
+/* estilo do geral */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
 }
+
+body{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto  ;
+}
+
+/*estilo do cabeçalho*/ 
+
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
