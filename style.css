@@ -20,13 +20,45 @@ body{
 
 header{
     padding: 40px 4%;
-
-}
-
-header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+
 }
 
+header a{
+    color: red;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.20);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+header .Jm-contato button{
+    padding:  10px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(21, 132, 196);
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .Jm-contato button:hover{
+    box-shadow: 0px 0px 8px cornflowerblue;
+}
