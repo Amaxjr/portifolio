@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 100vh;
 }
 
@@ -15,6 +15,11 @@ body{
     max-width: 1280px;
     margin: 0 auto  ;
 }
+
+.flex{
+    display: flex;
+}
+
 
 /*estilo do cabeçalho*/ 
 
@@ -28,13 +33,13 @@ header{
 }
 
 header a{
-    color: red;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 header a:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
     transform: scale(1.20);
 }
 
@@ -52,7 +57,7 @@ header .Jm-contato button{
     padding:  10px 10px;
     font-size: 18px;
     font-weight: 600;
-    background-color: rgb(21, 132, 196);
+    background-color: rgb(113, 0, 141);
     color: white;
     border: 0;
     border-radius: 30px;
@@ -60,5 +65,40 @@ header .Jm-contato button{
 }
 
 header .Jm-contato button:hover{
-    box-shadow: 0px 0px 8px cornflowerblue;
+    box-shadow: 0px 0px 8px rgb(204, 0, 255);
+}
+
+
+/* Estlio do Tp do site */
+section.topo-do-site{
+    padding: 40px  4%;
+
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+section.topo-do-site{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.topo-do-site h1{
+    color: white;
+    font-size: 30px;
+}
+.topo-do-site h1:hover{
+    color:  rgb(113, 0, 141);
+}
+
+.topo-do-site .txt-topo-do-site p{
+    color: white;
+    font-size: 20px;
+}
+
+section.topo-do-site .txt-topo-do-site p span{
+    color: red;
 }
