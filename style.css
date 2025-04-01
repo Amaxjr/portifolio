@@ -57,7 +57,7 @@ header .Jm-contato button{
     padding:  10px 10px;
     font-size: 18px;
     font-weight: 600;
-    background-color: rgb(113, 0, 141);
+    background-color:  rgb(255, 0, 0);
     color: white;
     border: 0;
     border-radius: 30px;
@@ -65,7 +65,7 @@ header .Jm-contato button{
 }
 
 header .Jm-contato button:hover{
-    box-shadow: 0px 0px 8px rgb(204, 0, 255);
+    box-shadow: 0px 0px 8px  rgb(255, 0, 0);
 }
 
 
@@ -91,7 +91,7 @@ section.topo-do-site{
     font-size: 30px;
 }
 .topo-do-site h1:hover{
-    color:  rgb(113, 0, 141);
+    color:  rgb(255, 0, 0);
 }
 
 .topo-do-site .txt-topo-do-site p{
@@ -102,3 +102,19 @@ section.topo-do-site{
 section.topo-do-site .txt-topo-do-site p span{
     color: red;
 }
+
+/* Para a imagem ficar flutuando */
+
+.topo-do-site .img-topo-do-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;  
+    }
+}
+/* Para a imagem ficar flutuando */
