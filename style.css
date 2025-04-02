@@ -140,6 +140,26 @@ section.sobre .flex{
 
 .sobre .texto-sobre h2 span{
     color: orange;
+    display: block;
+}
+.sobre .texto-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.sobre .texto-sobre .jmsocial button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: orange;
+    font-size: 21px;
+    cursor: pointer;
+    margin: 0 3px;
+    box-shadow: 0px 0px 8px orange;
+}
+.sobre .texto-sobre .jmsocial button:hover{
+    transition: .3s;
+    transform: scale(1.15);
 }
 
 /* END SOBRE */
