@@ -1,6 +1,6 @@
 /* estilo do geral */
 *{
-    padding: 0;
+    padding: 10;
     margin: 0;
     box-sizing: border-box;
     font-family: "Kanit", sans-serif;
@@ -24,11 +24,12 @@ body{
 /*estilo do cabeçalho*/ 
 
 header{
-    padding: 40px 4%;
+    padding: 10px 4%;
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    box-shadow: 0 0 40px 10px rgb(27, 26, 26);
 
 }
 
@@ -39,7 +40,7 @@ header  a{
     transition: .2s;
 }
 header a:hover{
-    color: rgb(255, 0, 0);
+    color: orange;
     transform: scale(1.20);
 }
 
@@ -57,7 +58,7 @@ header .Jm-contato button{
     padding:  10px 10px;
     font-size: 18px;
     font-weight: 600;
-    background-color:  rgb(255, 0, 0);
+    background-color:  orange;
     color: white;
     border: 0;
     border-radius: 30px;
@@ -65,13 +66,13 @@ header .Jm-contato button{
 }
 
 header .Jm-contato button:hover{
-    box-shadow: 0px 0px 8px  rgb(255, 0, 0);
+    box-shadow: 0px 0px 8px  orange;
 }
 
 
 /* Estlio do Tp do site */
 section.topo-do-site{
-    padding: 40px  4%;
+    padding: 50px  4%;
 
 }
 section.topo-do-site .flex{
@@ -91,7 +92,7 @@ section.topo-do-site{
     font-size: 50px;
 }
 .topo-do-site h1:hover{
-    color:  rgb(255, 0, 0);
+    color:  orange;
 }
 
 .topo-do-site .txt-topo-do-site p{
@@ -100,7 +101,7 @@ section.topo-do-site{
 }
 
 section.topo-do-site .txt-topo-do-site p span{
-    color: red;
+    color: orange;
 }
 
 /* Para a imagem ficar flutuando */
@@ -121,7 +122,8 @@ section.topo-do-site .txt-topo-do-site p span{
 
 /* SOBRE */
 section.sobre{
-    padding: 30% 3%;
+    padding: 100px 3%;
+    box-shadow: 0 0 40px 10px rgb(27, 26, 26);
 }
 
 section.sobre .flex{
@@ -146,7 +148,7 @@ section.sobre .flex{
     margin: 20px 0;
     text-align: justify;
 }
-.sobre .texto-sobre .jmsocial button{
+.jmsocial button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -157,9 +159,40 @@ section.sobre .flex{
     margin: 0 3px;
     box-shadow: 0px 0px 8px orange;
 }
-.sobre .texto-sobre .jmsocial button:hover{
+.jmsocial button:hover{
     transition: .3s;
     transform: scale(1.15);
 }
-
 /* END SOBRE */
+
+
+/* RODAPÉ */
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgb(27, 26, 26);
+
+}
+
+footer .flex{
+    justify-content: center;
+    
+}
+
+footer .linha-abaixo{
+    padding: 23px 0;
+    border-bottom: 2px solid orange;
+    border-top: 20px ;
+}
+
+footer .linha-abaixo p i{
+    color: orange;
+    font-size: 20px;
+    
+}
+
+footer .linha-abaixo p a{
+    color: white;
+   
+
+
+/* END RODAPÉ */
