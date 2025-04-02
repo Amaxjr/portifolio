@@ -32,7 +32,7 @@ header{
 
 }
 
-header a{
+header  a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: inline-block;
@@ -88,7 +88,7 @@ section.topo-do-site{
 
 .topo-do-site h1{
     color: white;
-    font-size: 30px;
+    font-size: 50px;
 }
 .topo-do-site h1:hover{
     color:  rgb(255, 0, 0);
@@ -118,3 +118,28 @@ section.topo-do-site .txt-topo-do-site p span{
     }
 }
 /* Para a imagem ficar flutuando */
+
+/* SOBRE */
+section.sobre{
+    padding: 30% 3%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .texto-sobre{
+    color: white;
+}
+
+.sobre .texto-sobre h2{
+    font-size: 60px;
+
+}
+
+.sobre .texto-sobre h2 span{
+    color: orange;
+}
+
+/* END SOBRE */
