@@ -192,7 +192,23 @@ footer .linha-abaixo p i{
 
 footer .linha-abaixo p a{
     color: white;
-   
-
+ }
 
 /* END RODAPÉ */
+
+@media screen and (max-width: 904px){
+    /* Classe Geral */
+    .flex{
+        flex-direction: column;
+    }
+
+  .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+    
+
+    /* cabeçalho do app movel */
+     .Menu-desktop, .Jm-contato{
+        display: none;
+    }
+}
