@@ -1,29 +1,29 @@
 /* estilo do geral */
-*{
+* {
     padding: 10;
     margin: 0;
     box-sizing: border-box;
     font-family: "Kanit", sans-serif;
 }
 
-body{
+body {
     background-color: rgb(0, 0, 0);
     height: 100vh;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
-    margin: 0 auto  ;
+    margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
 
-/*estilo do cabeçalho*/ 
+/*estilo do cabeçalho*/
 
-header{
+header {
     padding: 10px 4%;
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -33,13 +33,14 @@ header{
 
 }
 
-header  a{
+header a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
-header a:hover{
+
+header a:hover {
     color: orange;
     transform: scale(1.20);
 }
@@ -48,107 +49,114 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     padding: 0 40px;
 
 }
 
-header .Jm-contato button{
-    padding:  10px 10px;
+header .Jm-contato button {
+    padding: 10px 10px;
     font-size: 18px;
     font-weight: 600;
-    background-color:  orange;
+    background-color: orange;
     color: white;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
 }
 
-header .Jm-contato button:hover{
-    box-shadow: 0px 0px 8px  orange;
+header .Jm-contato button:hover {
+    box-shadow: 0px 0px 8px orange;
 }
 
 
 /* Estlio do Tp do site */
-section.topo-do-site{
-    padding: 50px  4%;
+section.topo-do-site {
+    padding: 50px 4%;
 
 }
-section.topo-do-site .flex{
+
+section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-section.topo-do-site{
+section.topo-do-site {
     align-items: center;
     justify-content: center;
 }
 
 
-.topo-do-site h1{
+.topo-do-site h1 {
     color: white;
     font-size: 50px;
 }
-.topo-do-site h1:hover{
-    color:  orange;
+
+.topo-do-site h1:hover {
+    color: orange;
 }
 
-.topo-do-site .txt-topo-do-site p{
+.topo-do-site .txt-topo-do-site p {
     color: white;
     font-size: 20px;
 }
 
-section.topo-do-site .txt-topo-do-site p span{
+section.topo-do-site .txt-topo-do-site p span {
     color: orange;
 }
 
 /* Para a imagem ficar flutuando */
 
-.topo-do-site .img-topo-do-site img{
+.topo-do-site .img-topo-do-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
-@keyframes flutuar{
-    0%{
+
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
-        top: 30px;  
+
+    100% {
+        top: 30px;
     }
 }
+
 /* Para a imagem ficar flutuando */
 
 /* SOBRE */
-section.sobre{
+section.sobre {
     padding: 100px 3%;
     box-shadow: 0 0 40px 10px rgb(27, 26, 26);
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre .texto-sobre{
+.sobre .texto-sobre {
     color: white;
 }
 
-.sobre .texto-sobre h2{
+.sobre .texto-sobre h2 {
     font-size: 60px;
 
 }
 
-.sobre .texto-sobre h2 span{
+.sobre .texto-sobre h2 span {
     color: orange;
     display: block;
 }
-.sobre .texto-sobre p{
+
+.sobre .texto-sobre p {
     margin: 20px 0;
     text-align: justify;
 }
-.jmsocial button{
+
+.jmsocial button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -159,56 +167,176 @@ section.sobre .flex{
     margin: 0 3px;
     box-shadow: 0px 0px 8px orange;
 }
-.jmsocial button:hover{
+
+.jmsocial button:hover {
     transition: .3s;
     transform: scale(1.15);
 }
+
 /* END SOBRE */
 
 
 /* RODAPÉ */
-footer{
-    padding: 40px 4%;
-    box-shadow: 0 0 40px 10px rgb(27, 26, 26);
-
-}
-
-footer .flex{
+footer {
+    display: flex;
     justify-content: center;
-    
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
 }
 
-footer .linha-abaixo{
+.rodape-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Mantém tudo centralizado */
+    gap: 15px;
+}
+
+
+.linha-divisoria {
+    width: 80%;
+    height: 2px;
+    background-color: orange;
+    border: none;
+    margin: 10px 0;
+}
+
+
+footer .flex {
+    justify-content: center;
+
+}
+
+footer .linha-abaixo {
     padding: 23px 0;
     border-bottom: 2px solid orange;
-    border-top: 20px ;
+    border-top: 20px;
 }
 
-footer .linha-abaixo p i{
+footer .linha-abaixo p i {
     color: orange;
     font-size: 20px;
-    
+
 }
 
-footer .linha-abaixo p a{
+footer .linha-abaixo p a {
     color: white;
- }
+}
 
 /* END RODAPÉ */
 
-@media screen and (max-width: 904px){
+@media screen and (max-width: 904px) {
+
     /* Classe Geral */
-    .flex{
+    .flex {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
-  .topo-do-site .flex{
+    .topo-do-site .flex {
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
-    
+
 
     /* cabeçalho do app movel */
-     .Menu-desktop, .Jm-contato{
+    .Menu-desktop,
+    .Jm-contato {
         display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+
+        /* Container do rodapé */
+        .rodape-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            gap: 15px;
+        }
+
+        /* Linha divisória */
+        .linha-divisoria {
+            width: 80%;
+            height: 2px;
+            background-color: orange;
+            border: none;
+            margin: 10px 0;
+        }
+
+
+        /* Estilo para o e-mail */
+        .contato {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contato i {
+            color: orange;
+            font-size: 24px;
+        }
+
+        .contato a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Ícones sociais lado a lado */
+        .jmsocial {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .jmsocial a {
+            text-decoration: none;
+        }
+
+        .jmsocial button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 0;
+            background-color: orange;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0px 0px 8px orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Ajuste para a imagem no rodapé */
+        .logo-rodape img {
+            display: block;
+            max-width: 150px;
+            /* Ajuste o tamanho conforme necessário */
+            height: auto;
+            margin-top: 10px;
+
+        }
     }
 }
