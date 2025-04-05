@@ -1,10 +1,10 @@
-/* estilo do geral */
+/* ESTILO GERAL */
 * {
-    padding: 10PX;
     margin: 0;
     box-sizing: border-box;
     font-family: "Kanit", sans-serif;
 }
+
 
 body {
     background-color: rgb(0, 0, 0);
@@ -54,18 +54,19 @@ header nav.Menu-desktop ul li {
     padding: 0 40px;
 
 }
-header nav ul li a:hover{
+
+header nav ul li a:hover {
     background-color: black;
 }
 
 /* Estilo do Menu Mobile */
 
-.jm-abrir-menu i{
+.jm-abrir-menu i {
     color: orange;
     font-size: 30px;
 }
 
-.menu-mobile{
+.menu-mobile {
     background-color: rgb(0, 0, 0);
     height: 100vh;
     position: fixed;
@@ -75,28 +76,31 @@ header nav ul li a:hover{
     width: 0%;
     overflow: hidden;
     transition: .4s;
- 
+
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 70%;
 }
-.menu-mobile.abrir-menu ~ .overlay-menu{
+
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
-.menu-mobile .jm-fechar{
+.menu-mobile .jm-fechar {
     padding: 20px 5%
 }
-.menu-mobile .jm-fechar i{
+
+.menu-mobile .jm-fechar i {
     color: orange;
     font-size: 30px;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
     text-align: right;
 }
-.menu-mobile nav ul li a{
+
+.menu-mobile nav ul li a {
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 300;
@@ -104,12 +108,12 @@ header nav ul li a:hover{
     display: block;
 }
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover {
     background-color: orange;
     color: black;
 }
 
-.overlay-menu{
+.overlay-menu {
     background-color: rgba(0, 0, 0, 0.486);
     width: 100%;
     height: 100%;
@@ -201,7 +205,7 @@ section.sobre {
 
 section.sobre .flex {
     align-items: center;
-    gap: 60px;
+    gap: 160px;
 }
 
 .sobre .texto-sobre {
@@ -388,10 +392,18 @@ footer .linha-abaixo p a {
         .logo-rodape img {
             display: block;
             max-width: 150px;
-            /* Ajuste o tamanho conforme necessário */
             height: auto;
             margin-top: 10px;
 
         }
     }
+    img {
+        max-width: 100%;
+        /* Impede que a imagem seja mais larga que o contêiner */
+        height: auto;
+        /* Mantém a proporção da imagem */
+        display: block;
+        /* Ajuda a evitar espaços extras abaixo da imagem */
+    }
+    
 }
