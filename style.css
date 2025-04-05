@@ -1,6 +1,6 @@
 /* estilo do geral */
 * {
-    padding: 10;
+    padding: 10PX;
     margin: 0;
     box-sizing: border-box;
     font-family: "Kanit", sans-serif;
@@ -40,7 +40,7 @@ header a {
     transition: .2s;
 }
 
-header a:hover {
+header nav.Menu-desktop a:hover {
     color: orange;
     transform: scale(1.20);
 }
@@ -49,11 +49,69 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+header nav.Menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 
 }
+header nav ul li a:hover{
+    background-color: black;
+}
+
+/* Estilo do Menu Mobile */
+
+.jm-abrir-menu i{
+    color: orange;
+    font-size: 30px;
+}
+
+.menu-mobile{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+ 
+}
+.menu-mobile .jm-fechar{
+    padding: 20px 5%
+}
+.menu-mobile .jm-fechar i{
+    color: orange;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: orange;
+    color: black;
+}
+
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    display: none;
+}
+
+/* End Menu mobile */
 
 header .Jm-contato button {
     padding: 10px 10px;
@@ -193,7 +251,8 @@ footer {
     justify-content: center;
     text-align: center;
     width: 100%;
-    max-width: 600px; /* Mantém tudo centralizado */
+    max-width: 600px;
+    /* Mantém tudo centralizado */
     gap: 15px;
 }
 
@@ -260,7 +319,7 @@ footer .linha-abaixo p a {
         justify-content: center;
         text-align: center;
         width: 100%;
-        padding: 20px 0;
+        padding: 30px 0;
 
         /* Container do rodapé */
         .rodape-container {
@@ -315,19 +374,6 @@ footer .linha-abaixo p a {
             text-decoration: none;
         }
 
-        .jmsocial button {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 0;
-            background-color: orange;
-            font-size: 20px;
-            cursor: pointer;
-            box-shadow: 0px 0px 8px orange;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
 
         /* Ajuste para a imagem no rodapé */
         .logo-rodape img {
